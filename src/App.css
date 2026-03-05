@@ -1,0 +1,21 @@
+@import "tailwindcss";
+#root {
+ padding: 0;
+ box-sizing: border-box;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  /* text-align: center; */
+  background-color:slategray;
+  font-family: IBMPlexSans;
+}
+
+.dark-glow {
+  background: radial-gradient(circle, rgba(168,85,247,0.6), transparent 70%);
+}
+
+.light-glow {
+  background: radial-gradient(circle, rgba(99,102,241,0.4), transparent 70%);
+}
+
+
+
