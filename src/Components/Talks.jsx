@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Linkedin, Facebook } from 'lucide-react';
 
-export default function ContactSection() {
+export default function ContactSection({dark}) {
   const [colorIndex, setColorIndex] = useState(0);
   const [showText, setShowText] = useState(false);
 
@@ -39,7 +39,10 @@ export default function ContactSection() {
   const currentColor = colors[colorIndex];
 
   return (
-    <div className="max-w-[81%] mx-auto bg-gradient-to-b from-slate-950 to-purple-950 text-white p-8">
+    <div className="max-w-[81%] mx-auto  p-8 border border-gray-300 rounded-md " style={{
+      background : dark ? "linear-gradient(to right, #020617, #3b0764)" : "white",
+      color : dark ? "white" : "black"
+    }}>
       <div className=" mx-auto">
         {/* Main Section with Heading and Circle aligned horizontally */}
         <div className="flex items-center justify-between mb-12 gap-8">

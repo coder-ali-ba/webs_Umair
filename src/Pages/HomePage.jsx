@@ -680,8 +680,8 @@ function HomePage() {
         <NewsletterSubscription dark={dark}/>
       </div>
 
-      <div className="mt-12">
-        <ContactSection />
+      <div className="mt-8 mb-4">
+        <ContactSection dark={dark} />
       </div>
 
       {/* <ProjectKickoffModal /> */}
